@@ -1,0 +1,12 @@
+#logo {
+  min-width: 350px;
+  height: 50px;
+  margin-left: 1px;
+  line-height: 50px;
+}
+#logo span {
+  vertical-align: middle;
+}
+#nav {
+  margin-right: 1px;
+}
