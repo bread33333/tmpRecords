@@ -2,7 +2,13 @@
 fis.match('*.less',{
 	parser:fis.plugin('less'),
 	rExt:'.css',
+	useSprite: true
 })
+
+fis.match('::package', {
+  spriter: fis.plugin('csssprites')
+})
+
 
 
 //生产配置

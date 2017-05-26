@@ -53,8 +53,8 @@
 			<td>id</td>
 			<td colspan="8">
 			
-				<button class="btn btn-default btn-xs"><img title="首页" src="./img/first.png" /></button>
-				<button class="btn btn-default btn-xs"><img title="上一页" src="./img/prev.png" /></button>
+				<button class="btn btn-default btn-xs" title="首页"><div class='png first-png'></div></button>
+				<button class="btn btn-default btn-xs" title="上一页"><div class='png prev-png'></div></button>
 				<span>&nbsp;第</span>
 				<div class="btn-group btn-group-xs">
 					<button class="btn btn-default btn-xs dropdown-toggle" data-toggle='dropdown'>
@@ -68,9 +68,22 @@
 					<li><a href="#">5</a></li>	
 				</ul>
 				</div>
-				<span>页，共 5 页&nbsp;</span>
-				<button class='btn btn-default btn-xs'><img title="下一页" src="./img/next.png" /></button>
-				<button class='btn btn-default btn-xs'><img title="尾页" src="./img/last.png" /></button>
+				<span>页，共 5 页，每页&nbsp;</span>
+				<div class="btn-group btn-group-xs">
+					<button class="btn btn-default btn-xs dropdown-toggle" data-toggle='dropdown'>
+					1 <span class=caret></span>
+					</button>
+				<ul id="toPage" class="dropdown-menu" >
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>	
+				</ul>
+				</div>
+				<span>&nbsp;行</span>
+				<button class='btn btn-default btn-xs' title="下一页"><div class='png next-png'></div></button>
+				<button class='btn btn-default btn-xs' title="尾页"><div class='png last-png'></div></button>
 			</td>
 			
 		</tr>

@@ -17,6 +17,19 @@
 				padding: 3px 5px;
 			}
 		}
+		.png {
+			width: 16px;
+			height: 16px;			
+		}
+		.page-btn(@div,@bgimg){
+			.@{div} {
+				background:url("../img/@{bgimg}") no-repeat;
+			}
+		}
+		.page-btn(first-png,"first.png?__sprite");
+		.page-btn(prev-png,"prev.png?__sprite");
+		.page-btn(next-png,"next.png?__sprite");
+		.page-btn(last-png,"last.png?__sprite");
 	}
 	tr td:first-child,tr th:first-child {
 		display:none;
